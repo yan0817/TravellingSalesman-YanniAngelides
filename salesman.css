@@ -1,0 +1,24 @@
+body {
+	background-color:#00FFFF;
+}
+
+#button3 {
+	background-color:#00FF00;
+	width:75px;
+}
+
+#button2 {
+	background-color:#FF00FF;
+	width:75px;
+}
+
+#canvas{
+	background-color: #FFFFFF;
+}
+
+.listElement {
+	background-color:#00FF00;
+	width:100px;
+	height:75px;
+	border:1px solid #22A;
+}
