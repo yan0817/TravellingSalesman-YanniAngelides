@@ -35,14 +35,14 @@ $(document).ready( function() {
 			var smallest = 0;
 			for(var j = 0; j < nearX.length; j++)
 			{
-				distanceCompare = Math.sqrt((Math.pow((dotX[i] - nearX[j]), 2)) + (Math.pow((dotY[i] - nearY[i]), 2)));
+				var distanceCompare = Math.sqrt((Math.pow((dotX[i] - nearX[j]), 2)) + (Math.pow((dotY[i] - nearY[i]), 2)));
 				if(distanceCompare < Math.sqrt((Math.pow((dotX[i] - nearX[smallest]), 2)) + (Math.pow((dotY[i] - nearY[smallest]), 2))))
 				{
 					smallest = j;
 				}
 			}
-			dotX.splice(smallest,0,dotX[i]);
-			dotY.splice(smallest,0,dotY[i]);
+			nearX.splice(smallest,0,dotX[i]);
+			nearY.splice(smallest,0,dotY[i]);
 		}
 		
 		//draw lines between points
